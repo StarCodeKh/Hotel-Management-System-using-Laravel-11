@@ -52,7 +52,7 @@ class RegisterController extends Controller
         $user->password     = Hash::make($request->password);
         $user->save();
     
-        flash()->success('Create new account successfully :)','Success');
+        flash()->success('Create new account successfully :)');
         return redirect('login');
     }
 }
